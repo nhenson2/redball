@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            function pfadeout(){
+                
+                //$("p") will fadeout all paragraphs
+                //var myparagraph = $("p");
+                
+                //will fadeout only the paragrapg with the 'pfade' id
+                var myparagraph = $("#pfade")
+                myparagraph.fadeOut();
+            }
+        </script>
+        
+        <body>
+
+            
+            <p id = "pfade">I am about to fade out!</p>
+            <p>This is my second paragraph</p>
+            <button onclick="pfadeout()">fadeout</button>
+        </body>
+    </head>
+</html>
